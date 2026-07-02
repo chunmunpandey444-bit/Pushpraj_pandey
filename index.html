@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Sahi CSS file linking (bina 's' ke style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>My Simple Calculator</h2>
+    
+    <!-- Input Boxes (Humne inka type="number" rakha hai taaki sirf numbers type ho sakein) -->
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    
+    <br><br>
+
+    <!-- Operations Buttons ke andar ab simple signs hain -->
+    <button onclick="calculate('+')">+</button>
+    <button onclick="calculate('-')">-</button>
+    <button onclick="calculate('*')">*</button>
+    <button onclick="calculate('/')">/</button>
+
+    <br><br>
+
+    <!-- Result Display -->
+    <h3>Result: <span id="result">0</span></h3>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+
+</body>
+</html>
