@@ -1,32 +1,38 @@
-body {
-    background-color: darkgray;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    margin-top: 50px;
+/* 1. Calculator ke main outer box ki styling (Jo aapne likha hai) */
+.calculator-box {
+    background-color: white; 
+    max-width: 350px; 
+    margin: 50px auto; 
+    padding: 30px;
+    border-radius: 15px; 
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); 
 }
 
-/* Is section mein humne border ko dark aur sundar kiya hai */
+
 input {
-    padding: 10px;
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
     font-size: 16px;
-    margin: 5px;
-    border: 2px solid #888; /* Thoda dark grey border taaki boxes saaf dikhein */
-    border-radius: 5px;
-    outline: none;
+    text-align: center;
 }
 
+/* 3. Green Buttons ko wapas laane ke liye yeh niche jodh lijiye */
 button {
-    background-color: #4CAF50;
+    background-color: #4CAF50; 
     color: white;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin: 5px;
     transition: 0.2s;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #45a049; 
 }
