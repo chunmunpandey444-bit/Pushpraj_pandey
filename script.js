@@ -1,20 +1,30 @@
-let inputone = document.querySelector("#num1");
-let inputtwo = document.querySelector("#num2");
-let addbtn = document.querySelector("rgb(204, 178, 32)-btn");
-let subbtn = document.querySelector("#sub-btn");
-let resultheading = document.querySelector("#calc-result");
+function calculate(operator) {
+    // 1. Dono input boxes se numbers ko lekar aana
+    let num1 = parseFloat(document.getElementById('num1').value);
+    let num2 = parseFloat(document.getElementById('num2').value);
+    let result = 0;
 
-    addbtn.addEventListener("click", function() {
+    // 2. Agar dono me se koi bhi box khali hai toh warning dena
+    if (isNaN(num1) || isNaN(num2)) {
+        alert("Please enter both numbers(dono columns me)!");
+        return;
+    }
 
-        let value1 = Number(inputone.value);
-        let value2 = Number(inputtwo.value);
-        let sum = value1 + value2;
-        resultheading.innerText = "Result: " + sum;
-    });
+    // 3. Operator ke mutabik calculation karna
+    if (operator === '+') {
+        result = num1 + num2;
+    } else if (operator === '-') {
+        result = num1 - num2;
+    } else if (operator === '*') {
+        result = num1 * num2;
+    } else if (operator === '/') {
+        if (num2 === 0) {
+            alert("Cannot divide by zero!");
+            return;
+        }
+        result = num1 / num2;
+    }
 
-    subbtn.addEventListener("click", function() {
-        let value1 = Number(inputone.value);
-        let value2 = Number(inputtwo.value);
-        let difference = value1 - value2;
-        resultheading.innerText = "Result: " + difference;
-    });
+    // 4. Result ko screen par display karna
+    document.getElementById('result').innerText = result;
+}
