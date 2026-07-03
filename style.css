@@ -1,38 +1,56 @@
-/* 1. Calculator ke main outer box ki styling (Jo aapne likha hai) */
-.calculator-box {
-    background-color: white; 
-    max-width: 350px; 
-    margin: 50px auto; 
-    padding: 30px;
-    border-radius: 15px; 
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); 
+body {
+    background-color: darkgray;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
 }
 
+/* Calculator Ka Main Outer Card Box */
+.calculator-box {
+    background-color: white;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3);
+}
 
+/* Input Boxes Ki Styling */
 input {
-    width: 80%;
+    width: 85%;
     padding: 12px;
     margin: 10px 0;
     border: 2px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
     text-align: center;
+    outline: none;
 }
 
-/* 3. Green Buttons ko wapas laane ke liye yeh niche jodh lijiye */
+/* Buttons Ka Grid (2 Columns Structure) */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+/* Buttons Ki Individual Styling */
 button {
-    background-color: #4CAF50; 
+    width: 100%;
+    background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
-    font-size: 18px;
+    padding: 15px;
+    font-size: 20px;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    margin: 5px;
     transition: 0.2s;
 }
 
+/* Hover Effect */
 button:hover {
-    background-color: #45a049; 
+    background-color: #45a049;
 }
