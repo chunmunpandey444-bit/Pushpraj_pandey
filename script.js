@@ -6,7 +6,7 @@ function calculate(operator) {
 
     // 2. Agar dono me se koi bhi box khali hai toh warning dena
     if (isNaN(num1) || isNaN(num2)) {
-        alert("Please enter both numbers(dono columns me)!");
+        alert("Please enter both numbers!");
         return;
     }
 
