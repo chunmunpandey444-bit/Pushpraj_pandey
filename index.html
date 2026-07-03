@@ -1,30 +1,30 @@
-   
-   <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>simple calculator</title>
-        <!-- css file ko linkkarne ke liya niche wali line dalen-->
-        <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-         <h2>my simple calculator</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-         <!-- input BOXES--
-          <input type="text" id="num1" placeholder="Enter first number">
-          <input type="text" id="num2" placeholder="Enter second number">
+    <div class="calculator-box">
+        <h2>My Simple Calculator</h2>
         
-         <!-- operations buttons -->
-         <button onclick="calculate('+')">Add</button>
-         <button onclick="calculate('-')">Subtract</button>
-         <button onclick="calculate('*')">Multiply</button>
-         <button onclick="calculate('/')">Divide</button>
-          
-         </div>
-         <br>
-         <h3>Result: <span id="result">0</span></h3>
-
+        <input type="number" id="num1" placeholder="Enter first number">
+        <input type="number" id="num2" placeholder="Enter second number">
+        
+        <!-- Buttons Grid Container -->
+        <div class="buttons-grid">
+            <button onclick="calculate('+')">+</button>
+            <button onclick="calculate('-')">-</button>
+            <button onclick="calculate('*')">*</button>
+            <button onclick="calculate('/')">/</button>
         </div>
-        <script src="script.js"></script>
-        </body>
 
-          
+        <h3>Result: <span id="result">0</span></h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
